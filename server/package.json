@@ -1,0 +1,26 @@
+{
+  "name": "banco-server",
+  "version": "1.0.0",
+  "description": "API REST del banco (Node.js + Express + MongoDB con transacciones)",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "seed": "node src/seed/seed.js",
+    "seed:reset": "node src/seed/seed.js --reset"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^5.3.0",
+    "mongoose": "^8.24.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
